@@ -20,7 +20,7 @@ end
 
 --@help Seek Previous button
 actions.seekprevious = function ()
-	kb.press("shift","<");
+	kb.press("pagedown");
 end
 
 --@help Seek Right button
@@ -35,7 +35,7 @@ end
 
 --@help Seek Next button
 actions.seeknext = function ()
-	kb.press("shift",">");
+	kb.press("pageup");
 end
 
 --@help playpause toggle
@@ -71,4 +71,12 @@ end
 --@help screenshot button
 actions.screenshot = function ()
 	kb.stroke("s");
+end
+
+actions.cyclesubs = function ()
+	kb.stroke("j");
+end
+
+actions.cycleaudio = function ()
+	kb.stroke("shift", "3");
 end
